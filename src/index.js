@@ -2,7 +2,7 @@ const PENDING = 'pending';
 const RESOLVED = 'resolved';
 const REJECTED = 'rejected';
 
-module.exports = class MyPromise {
+export class MyPromise {
   constructor(fn) {
     this.state = PENDING;
     this.value = undefined;
@@ -147,4 +147,4 @@ module.exports = class MyPromise {
       });
     });
   }
-};
+}
